@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Onboarding" customModule="Tuner_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZAN-Pw-6xD">
+                    <rect key="frame" x="0.0" y="44" width="414" height="443"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="414" id="1NM-Sk-YWd"/>
+                        <constraint firstAttribute="height" constant="443" id="boV-N5-Tjn"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTD-Vj-jbj">
+                    <rect key="frame" x="35" y="544" width="345" height="38.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="28"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUe-2V-v8I">
+                    <rect key="frame" x="35" y="604.5" width="345" height="27.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4K-uR-xl6">
+                    <rect key="frame" x="152" y="667" width="110" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="qJl-i4-Glc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Enter"/>
+                    <connections>
+                        <action selector="onboardingEnterButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="qTG-iH-ljN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="ZAN-Pw-6xD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="21M-ML-QVX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="d4K-uR-xl6" secondAttribute="trailing" constant="152" id="ILd-Yy-h99"/>
+                <constraint firstItem="ZAN-Pw-6xD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IVu-Yh-p42"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fUe-2V-v8I" secondAttribute="trailing" constant="34" id="KzJ-wo-OQP"/>
+                <constraint firstItem="fUe-2V-v8I" firstAttribute="top" secondItem="GTD-Vj-jbj" secondAttribute="bottom" constant="22" id="LA7-Up-TKd"/>
+                <constraint firstItem="fUe-2V-v8I" firstAttribute="top" secondItem="GTD-Vj-jbj" secondAttribute="bottom" constant="22" id="UWU-9w-uhn"/>
+                <constraint firstItem="d4K-uR-xl6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="152" id="Ysq-06-0hd"/>
+                <constraint firstItem="d4K-uR-xl6" firstAttribute="top" secondItem="fUe-2V-v8I" secondAttribute="bottom" constant="35" id="Zxp-2O-hX0"/>
+                <constraint firstItem="fUe-2V-v8I" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="aWA-1Z-5SJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GTD-Vj-jbj" secondAttribute="trailing" constant="34" id="aYl-dZ-Zuv"/>
+                <constraint firstItem="GTD-Vj-jbj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="eIL-bu-F0v"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZAN-Pw-6xD" secondAttribute="trailing" id="udI-ol-oin"/>
+                <constraint firstItem="GTD-Vj-jbj" firstAttribute="top" secondItem="ZAN-Pw-6xD" secondAttribute="bottom" constant="57" id="vkx-uD-UQe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="onBoardingDescription" destination="fUe-2V-v8I" id="obz-nK-FbS"/>
+                <outlet property="onboardingButton" destination="d4K-uR-xl6" id="40w-G8-uYA"/>
+                <outlet property="onboardingImage" destination="ZAN-Pw-6xD" id="Y4h-uh-FDL"/>
+                <outlet property="onboardingTitle" destination="GTD-Vj-jbj" id="HJh-ti-D8j"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </view>
+    </objects>
+</document>
